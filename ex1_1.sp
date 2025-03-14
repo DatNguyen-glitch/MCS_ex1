@@ -54,4 +54,4 @@ Vu u GND 0V
 .probe v(*)
 .print V(q) V(qb)
 
-
+.end
