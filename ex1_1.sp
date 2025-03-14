@@ -16,16 +16,16 @@
 
 **DGSB
 ** Pull up PMOS
-MP_PU1 q  gr VDD x pmos_sram nfin=1 
-MP_PU2 qb gl VDD x pmos_sram nfin=1
+MP_PU1 q  gr VDD x pmos_sram m=1 
+MP_PU2 qb gl VDD x pmos_sram m=1
 
 ** Pull down NMOS
-MN_PD1 q  gr GND x nmos_sram nfin=1
-MN_PD2 qb gl GND x nmos_sram nfin=1
+MN_PD1 q  gr GND x nmos_sram m=1
+MN_PD2 qb gl GND x nmos_sram m=1
 
 ** Access NMOS
-MN_AX1 bl  wl q  x nmos_sram nfin=1
-MN_AX2 blb wl qb x nmos_sram nfin=1
+MN_AX1 bl  wl q  x nmos_sram m=1
+MN_AX2 blb wl qb x nmos_sram m=1
 
 CBL  bl  GND 1e-12
 CBLB blb GND 1e-12
@@ -35,8 +35,9 @@ CBLB blb GND 1e-12
 ******************************
 VDD  VDD GND 0.7V
 VWL  wl  GND 0V		** Hold=0V, Read=0.7V
-VBL  bl  GND 0.7V
-VBLB blb GND 0.7V
+
+.ic V(bl) = 0.7V
+.ic V(blb) = 0.7V
 
 ************************************
 ** Voltage Control Voltage Source **
