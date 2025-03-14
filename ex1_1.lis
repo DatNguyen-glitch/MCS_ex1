@@ -1,0 +1,246 @@
+ ****** HSPICE -- Q-2020.03-SP2-2 linux64 (Nov  1 2020) ******                  
+  Copyright (c) 1986 - 2025 by Synopsys, Inc. All Rights Reserved.              
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File: ex1_1.sp                                                          
+  Command line options: /RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64/hspice -i ex1_1.sp -o ex1_1.lis
+  Start time: Fri Mar 14 16:33:32 2025
+ lic:  
+ lic: FLEXlm: SDK_12.6 
+ lic: USER:   es25MCS042           HOSTNAME: ee28 
+ lic: HOSTID: "d85ed3efc19a"       PID:      94991 
+ lic: Using FLEXlm license file: 
+ lic: 26585@lshc 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 14-may-2025/2024.09 
+ lic: 165(in_use)/1100(total) FLOATING license(s) on SERVER 26585@lshc 
+ lic:   
+  
+      
+             
+ Warning:'Floating bulk' occurs 1 times
+ Summary of floating bulk:
+ -----------------------
+ |Node      |Device    |
+ |----------+----------|
+ |x         |mp_pu1    |
+ -----------------------
+              
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+ convergence problems in dc sweep curves at  0.22289    
+  resimulating with dc convergence controls
+
+ ******
+ .title ex1_1
+
+ ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
+x
+
+ volt         voltage    voltage   
+             q          qb         
+ -707.10678m  699.9999m  601.4060n 
+ -697.10678m  699.9999m  549.1175n 
+ -687.10678m  699.9999m  501.8163n 
+ -677.10678m  699.9999m  459.0024n 
+ -667.10678m  699.9999m  420.2278n 
+ -657.10678m  699.9999m  385.0913n 
+ -647.10678m  699.9999m  353.2329n 
+ -637.10678m  699.9999m  324.3297n 
+ -627.10678m  699.9999m  298.0919n 
+ -617.10678m  699.9999m  274.2592n 
+ -607.10678m  699.9999m  252.5978n 
+ -597.10678m  699.9999m  232.8975n 
+ -587.10678m  700.0000m  214.9694n 
+ -577.10678m  700.0000m  198.6432n 
+ -567.10678m  700.0000m  183.7661n 
+ -557.10678m  700.0000m  170.1999n 
+ -547.10678m  700.0000m  157.8205n 
+ -537.10678m  700.0000m  146.5158n 
+ -527.10678m  700.0000m  136.1848n 
+ -517.10678m  700.0000m  126.7362n 
+ -507.10678m  700.0000m  118.0877n 
+ -497.10678m  700.0000m  110.1650n 
+ -487.10678m  700.0000m  102.9007n 
+ -477.10678m  700.0000m   96.2339n 
+ -467.10678m  700.0000m   90.1098n 
+ -457.10678m  700.0000m   84.4784n 
+ -447.10678m  700.0000m   79.2946n 
+ -437.10678m  700.0000m   74.5174n 
+ -427.10678m  700.0000m   70.1098n 
+ -417.10678m  700.0000m   66.0379n 
+ -407.10678m  700.0000m   62.2713n 
+ -397.10678m  700.0000m   58.7820n 
+ -387.10678m  700.0000m   55.5447n 
+ -377.10678m  700.0000m   52.5364n 
+ -367.10678m  700.0000m   49.7361n 
+ -357.10678m  700.0000m   47.1244n 
+ -347.10678m  700.0000m   44.6840n 
+ -337.10678m  700.0000m   42.3988n 
+ -327.10678m  700.0000m   40.2541n 
+ -317.10678m  700.0000m   38.2364n 
+ -307.10678m  700.0000m   36.3333n 
+ -297.10678m  700.0000m   34.5334n 
+ -287.10678m  700.0000m   32.8262n 
+ -277.10678m  700.0000m   31.2019n 
+ -267.10678m  700.0000m   29.6517n 
+ -257.10678m  700.0000m   28.1670n 
+ -247.10678m  700.0000m   26.7401n 
+ -237.10678m  700.0000m   25.3638n 
+ -227.10678m  700.0000m   24.0314n 
+ -217.10678m  700.0000m   22.7366n 
+ -207.10678m  700.0000m   21.4737n 
+ -197.10678m  700.0000m   20.2376n 
+ -187.10678m  700.0000m   19.0237n 
+ -177.10678m  700.0000m   17.8281n 
+ -167.10678m  700.0000m   16.6481n 
+ -157.10678m  700.0000m   15.4828n 
+ -147.10678m  700.0000m   14.3342n 
+ -137.10678m  700.0000m   13.2051n 
+ -127.10678m  700.0000m   12.1040n 
+ -117.10678m  700.0000m   11.0459n 
+ -107.10678m  700.0000m   10.0555n 
+  -97.10678m  700.0000m    9.1704n 
+  -87.10678m  700.0000m    8.4451n 
+  -77.10678m  700.0000m    7.9514n 
+  -67.10678m  700.0000m    7.7683n 
+  -57.10678m  700.0000m    7.9588n 
+  -47.10678m  700.0000m    8.5756n 
+  -37.10678m  700.0000m    9.7930n 
+  -27.10678m  700.0000m   12.0373n 
+  -17.10678m  700.0000m   16.0809n 
+   -7.10678m  700.0000m   23.2943n 
+    2.89322m  700.0000m   36.1149n 
+   12.89322m  700.0000m   58.8871n 
+   22.89322m  700.0000m   99.3761n 
+   32.89322m  700.0000m  171.5049n 
+   42.89322m  699.9999m  300.3242n 
+   52.89322m  699.9999m  531.0784n 
+   62.89322m  699.9998m  945.8319n 
+   72.89322m  699.9996m    1.6941u 
+   82.89322m  699.9993m    3.0498u 
+   92.89322m  699.9988m    5.5170u 
+  102.89322m  699.9979m   10.0291u 
+  112.89322m  699.9962m   18.3232u 
+  122.89322m  699.9931m   33.6533u 
+  132.89322m  699.9875m   62.1541u 
+  142.89322m  699.9772m  115.4846u 
+  152.89322m  699.9582m  216.0068u 
+  162.89322m  699.9223m  407.1154u 
+  172.89322m  699.8534m  774.5460u 
+  182.89322m  699.7166m    1.4934m 
+  192.89322m  699.4276m    2.9454m 
+  202.89322m  698.7313m    6.0993m 
+  212.89322m  696.1954m   15.0487m 
+  222.89322m   23.4816n  700.0000m 
+  232.89322m   24.7974n  700.0000m 
+  242.89322m   26.1544n  700.0000m 
+  252.89322m   27.5591n  700.0000m 
+  262.89322m   29.0185n  700.0000m 
+  272.89322m   30.5402n  700.0000m 
+  282.89322m   32.1322n  700.0000m 
+  292.89322m   33.8033n  700.0000m 
+  302.89322m   35.5629n  700.0000m 
+  312.89322m   37.4212n  700.0000m 
+  322.89322m   39.3891n  700.0000m 
+  332.89322m   41.4788n  700.0000m 
+  342.89322m   43.7031n  700.0000m 
+  352.89322m   46.0762n  700.0000m 
+  362.89322m   48.6137n  700.0000m 
+  372.89322m   51.3323n  700.0000m 
+  382.89322m   54.2505n  700.0000m 
+  392.89322m   57.3886n  700.0000m 
+  402.89322m   60.7688n  700.0000m 
+  412.89322m   64.4153n  700.0000m 
+  422.89322m   68.3550n  700.0000m 
+  432.89322m   72.6172n  700.0000m 
+  442.89322m   77.2344n  700.0000m 
+  452.89322m   82.2421n  700.0000m 
+  462.89322m   87.6796n  700.0000m 
+  472.89322m   93.5904n  700.0000m 
+  482.89322m  100.0220n  700.0000m 
+  492.89322m  107.0275n  700.0000m 
+  502.89322m  114.6650n  700.0000m 
+  512.89322m  122.9991n  700.0000m 
+  522.89322m  132.1009n  700.0000m 
+  532.89322m  142.0495n  700.0000m 
+  542.89322m  152.9322n  700.0000m 
+  552.89322m  164.8458n  700.0000m 
+  562.89322m  177.8975n  700.0000m 
+  572.89322m  192.2063n  700.0000m 
+  582.89322m  207.9042n  700.0000m 
+  592.89322m  225.1376n  700.0000m 
+  602.89322m  244.0692n  699.9999m 
+  612.89322m  264.8799n  699.9999m 
+  622.89322m  287.7707n  699.9999m 
+  632.89322m  312.9650n  699.9999m 
+  642.89322m  340.7116n  699.9999m 
+  652.89322m  371.2874n  699.9999m 
+  662.89322m  405.0010n  699.9999m 
+  672.89322m  442.1962n  699.9999m 
+  682.89322m  483.2563n  699.9999m 
+  692.89322m  528.6090n  699.9999m 
+  702.89322m  578.7316n  699.9999m 
+y
+
+          ***** job concluded
+1****** HSPICE -- Q-2020.03-SP2-2 linux64 (Nov  1 2020) ******                  
+ ******  
+ .title ex1_1
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: AMD EPYC 7713 64-Core Processor
+ cpu MHz	: 2000.000
+  
+ OS:
+ Linux version 3.10.0-1160.88.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Tue Mar 7 15:41:52 UTC 2023
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :   256
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      13 # elements   =      17
+  # resistors   =       0 # capacitors =       2 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       4
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       5
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       6 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  dc sweep           0.03         142         558
+  readin             0.01
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        396.09 megabytes
+           total cpu time            0.06 seconds
+           total elapsed time        2.91 seconds
+           job started at     16:33:32 03/14/2025
+           job ended   at     16:33:35 03/14/2025
+           job total runtime         2.91 seconds
+
+
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        2.85(s)
