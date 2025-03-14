@@ -7,19 +7,163 @@
   this software is strictly prohibited.
   Input File: ex1_1.sp                                                          
   Command line options: /RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64/hspice -i ex1_1.sp -o ex1_1.lis
-  Start time: Fri Mar 14 20:49:47 2025
+  Start time: Fri Mar 14 20:51:56 2025
  lic:  
  lic: FLEXlm: SDK_12.6 
  lic: USER:   es25MCS042           HOSTNAME: ee28 
- lic: HOSTID: "d85ed3efc19a"       PID:      219630 
+ lic: HOSTID: "d85ed3efc19a"       PID:      220240 
  lic: Using FLEXlm license file: 
  lic: 26585@lshc 
  lic: Checkout 1 hspice 
  lic: License/Maintenance for hspice will expire on 14-may-2025/2024.09 
- lic: 108(in_use)/1100(total) FLOATING license(s) on SERVER 26585@lshc 
+ lic: 112(in_use)/1100(total) FLOATING license(s) on SERVER 26585@lshc 
  lic:   
-  **error** (ex1_1.sp:6) unable to open file "7nm_TT.pm" . Either the file doesn't exist or the path is wrong. Please enter the correct file location. 
+  
+      
+             
+ Warning:'Floating bulk' occurs 1 times
+ Summary of floating bulk:
+ -----------------------
+ |Node      |Device    |
+ |----------+----------|
+ |x         |mpr       |
+ -----------------------
+              
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2.0000    
+ ******
+ .title noise margin in hold operation
 
-               ***** job aborted
+ ****** dc transfer curves tnom=  25.000 temp=  25.000 ******
+ cross_point=-494.9747m
+ max_1= 431.6740m    at=-253.1068m
+             from=-494.9747m    to= 494.9747m
+ max_2= 431.6740m    at= 253.0932m
+             from=-494.9747m    to= 494.9747m
+ snm= 305.2396m
+1****** HSPICE -- Q-2020.03-SP2-2 linux64 (Nov  1 2020) ******                  
+ ******  
+ .title noise margin in hold operation
+
+ ****** operating point information tnom=  25.000 temp=  25.000 ******
+ ****** operating point status is all       simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:bl      = 700.0000m 0:blb     = 700.0000m 0:gl      = 369.3009m
+ +0:gr      = 369.3009m 0:q       = 369.3009m 0:qb      = 369.3009m
+ +0:u       =   0.      0:v1      = 522.2703m 0:v2      = 522.2703m
+ +0:vdd     = 700.0000m 0:wl      =   0.      0:x       = 658.1762m
+
+
+ **** voltage sources
+
+ subckt                                   
+ element  0:vu       0:vvdd     0:vwl     
+  volts      0.       700.0000m    0.     
+  current    0.      -998.3374n  305.0209f
+  power      0.       698.8361n    0.     
+
+     total voltage source power dissipation=  698.8361n       watts
+
+
+
+ **** voltage-controlled voltage sources
+
+
+ subckt                                              
+ element  0:eli      0:ev1      0:eri      0:ev2     
+  volts    369.3009m  522.2703m  369.3009m  522.2703m
+  current   16.1798f    0.        16.1798f    0.     
+
+
+
+
+
+ **** mosfets
+
+
+ subckt                                                                    
+ element  0:mpr      0:mnr      0:mpl      0:mnl      0:mnpr     0:mnpl    
+ model    0:pmos_sra 0:nmos_sra 0:pmos_sra 0:nmos_sra 0:nmos_sra 0:nmos_sra
+ region   Subth      Subth      Subth      Subth      Cutoff     Cutoff    
+  id      -499.1686n  499.1686n -499.1686n  499.1686n  938.2452a  938.2452a
+  ibs        0.         0.         0.         0.         0.         0.     
+  ibd        0.         0.         0.         0.         0.         0.     
+  vgs     -330.6991m  369.3009m -330.6991m  369.3009m -369.3009m -369.3009m
+  vds     -330.6991m  369.3009m -330.6991m  369.3009m  330.6991m  330.6991m
+  vbs      -41.8238m  658.1762m  -41.8238m  658.1762m  288.8753m  288.8753m
+  vth     -334.7549m  408.4973m -334.7549m  408.4973m  408.7099m  408.7099m
+  vdsat    -95.5226m   79.1197m  -95.5226m   79.1197m   70.6690m   70.6690m
+  vod        4.0558m  -39.1964m    4.0558m  -39.1964m -778.0108m -778.0108m
+  beta       1.6413m    2.1736m    1.6413m    2.1736m    2.1736m    2.1736m
+  gam eff    0.         0.         0.         0.         0.         0.     
+  gm        12.9907u   15.3998u   12.9907u   15.3998u  8.590e-21  8.590e-21
+  gds      301.4608n  239.6269n  301.4608n  239.6269n  228.2566a  228.2566a
+  gmb        4.8922p   12.0124p    4.8922p   12.0124p  1.316e-20  1.316e-20
+  cdtot     10.1750a   10.2205a   10.1750a   10.2205a   10.2225a   10.2225a
+  cgtot     31.2784a   26.1428a   31.2784a   26.1428a   20.4450a   20.4450a
+  cstot     17.2863a   14.0661a   17.2863a   14.0661a   10.2225a   10.2225a
+  cbtot      0.         0.         0.         0.         0.         0.     
+  cgs       21.2138a   15.9421a   21.2138a   15.9421a   10.2225a   10.2225a
+  cgd       10.0646a   10.2007a   10.0646a   10.2007a   10.2225a   10.2225a
+
+
+
+
+          ***** job concluded
+ ******  
+ .title noise margin in hold operation
+
+ ****** job statistics summary tnom=  25.000 temp=  25.000 ******
+  
+ ******  Machine Information  ******
+ CPU:
+ model name	: AMD EPYC 7713 64-Core Processor
+ cpu MHz	: 2000.000
+  
+ OS:
+ Linux version 3.10.0-1160.88.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-44) (GCC) ) #1 SMP Tue Mar 7 15:41:52 UTC 2023
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :   256
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      13 # elements   =      15
+  # resistors   =       0 # capacitors =       2 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       4
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       3
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       6 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.01           1          10
+  dc sweep           1.05       14143       42435
+  readin             0.01
+  errchk             0.01
+  setup              0.00
+  output             0.00
+
+
+           peak memory used        401.11 megabytes
+           total cpu time            1.11 seconds
+           total elapsed time        1.51 seconds
+           job started at     20:51:56 03/14/2025
+           job ended   at     20:51:57 03/14/2025
+           job total runtime         1.51 seconds
+
+
  lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.28(s)
+ lic: total license checkout elapse time:        0.39(s)
