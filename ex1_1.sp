@@ -16,12 +16,12 @@
 
 **DGSB
 ** Pull up PMOS
-MP_PU1 q  gl VDD x pmos_sram nfin=1 
-MP_PU2 qb gr VDD x pmos_sram nfin=1
+MP_PU1 q  gr VDD x pmos_sram nfin=1 
+MP_PU2 qb gl VDD x pmos_sram nfin=1
 
 ** Pull down NMOS
-MN_PD1 q  gl GND x nmos_sram nfin=1
-MN_PD2 qb gr GND x nmos_sram nfin=1
+MN_PD1 q  gr GND x nmos_sram nfin=1
+MN_PD2 qb gl GND x nmos_sram nfin=1
 
 ** Access NMOS
 MN_AX1 bl  wl q  x nmos_sram nfin=1
