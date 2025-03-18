@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "Q-2020.03-SP2-2 linux64"
 * "format" "HSP"
-* "rundate" "21:10:22 03/18/2025 "
+* "rundate" "21:15:39 03/18/2025 "
 * "netlist" "ex1_1.sp "
 * "runtitle" ".title ex1_1"
 * time =    0.            
