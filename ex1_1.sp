@@ -42,10 +42,10 @@ VWL  wl  GND 0V		** Hold=0V, Read=0.7V
 ************************************
 ** Voltage Control Voltage Source **
 ************************************
-ELi gl qb VCVS POLY(2) v1 GND u GND 0 '1/sqrt(2)' '1/sqrt(2)'
-ERi gr q  VCVS POLY(2) v2 GND u GND 0 '1/sqrt(2)' '-1/sqrt(2)'
-Ev1 v1 u VCVS POLY(2) qb GND u GND 0 'sqrt(2)'    1
-Ev2 v2 u VCVS POLY(2) q  GND u GND 0 'sqrt(2)'    -1
+ELi gl GND VCVS POLY(2) v1 GND u GND 0 '1/sqrt(2)' '1/sqrt(2)'
+**ERi gr q  VCVS POLY(2) v2 GND u GND 0 '1/sqrt(2)' '-1/sqrt(2)'
+Ev1 v1 GND VCVS POLY(2) qb GND u GND 0 'sqrt(2)'    1
+**Ev2 v2 u VCVS POLY(2) q  GND u GND 0 'sqrt(2)'    -1
 
 Vu u GND 0V
 
