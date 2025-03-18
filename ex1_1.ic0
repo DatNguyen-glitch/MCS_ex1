@@ -1,7 +1,7 @@
 * "simulator" "HSPICE" 
 * "version" "Q-2020.03-SP2-2 linux64"
 * "format" "HSP"
-* "rundate" "23:24:03 03/18/2025 "
+* "rundate" "23:38:39 03/18/2025 "
 * "netlist" "ex1_1.sp "
 * "runtitle" ".title ex1_1"
 * time =    0.            
@@ -12,13 +12,13 @@
 .nodeset
 + bl = 700.0000m       
 + blb = 700.0000m       
-+ gl = 373.2765m       
-+ gr = 373.2765m       
-+ q = 373.2765m       
-+ qb = 373.2765m       
++ gl =  47.9486f       
++ gr = 700.0000m       
++ q = 700.0000m       
++ qb =  47.9486f       
 + u =   0.            
-+ v1 = 527.8927m       
-+ v2 = 527.8927m       
++ v1 = 989.9495m       
++ v2 =  67.8096f       
 + vdd = 700.0000m       
-+ wl = 700.0000m       
++ wl =   0.            
 ***   END: Saved Operating Point ***                     

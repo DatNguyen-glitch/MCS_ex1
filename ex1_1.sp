@@ -35,10 +35,12 @@ CBLB blb GND 1e-12
 **       Voltage Source     **
 ******************************
 VVDD  VDD GND 0.7V
-VWL  wl  GND 0.7V		** Hold=0V, Read=0.7V
+VWL  wl  GND 0.0V		** Hold=0V, Read=0.7V
 
 .ic V(bl) = 0.7V
 .ic V(blb) = 0.7V
+.ic V(q) = 0.7V
+.ic V(qb) = 0V
 
 ************************************
 ** Voltage Control Voltage Source **
