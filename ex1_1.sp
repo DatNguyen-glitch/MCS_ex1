@@ -51,11 +51,12 @@ VWL  wl  GND 0V		** Hold=0V, Read=0.7V
 **Ev2 v2 GND VCVS POLY(2) qb  GND u GND 0 'sqrt(2)'    -1
 
 **Vu u GND 0V
-Vq q GND 0V
+Vtest test GND 0V
+Rtest test q 1k
 
 .op
 **.dc Vu '-0.7/sqrt(2)' '0.7/sqrt(2)' 0.0001
-.dc Vq '0' '0.7/sqrt(2)' 0.0001
+.dc Vtest '0' '0.7' 0.0001
 
 .option post
 .option probe
