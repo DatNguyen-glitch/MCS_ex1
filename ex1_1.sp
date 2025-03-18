@@ -48,7 +48,7 @@ Ev1 v1 GND VCVS POLY(2) qb GND u GND 0 'sqrt(2)'    1
 Ev2 v2 GND VCVS POLY(2) q  GND u GND 0 'sqrt(2)'    -1
 
 Vu u GND 0V
-.dc Vu '0' '1/sqrt(2)' 0.0001
+.dc Vu '-1/sqrt(2)' '1/sqrt(2)' 0.0001
 
 .option post
 .option probe
