@@ -29,12 +29,13 @@ MN_AX2 blb wl qb GND  nmos_sram m=1
 
 CBL  bl  GND 1e-12
 CBLB blb GND 1e-12
-
+**Rconnect1 gl qb 1u
+**Rconnect2 gr q  1u
 ******************************
 **       Voltage Source     **
 ******************************
 VVDD  VDD GND 0.7V
-VWL  wl  GND 0V		** Hold=0V, Read=0.7V
+VWL  wl  GND 0.7V		** Hold=0V, Read=0.7V
 
 .ic V(bl) = 0.7V
 .ic V(blb) = 0.7V
