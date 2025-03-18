@@ -1,0 +1,25 @@
+* "simulator" "HSPICE" 
+* "version" "Q-2020.03-SP2-2 linux64"
+* "format" "HSP"
+* "rundate" "20:54:03 03/14/2025 "
+* "netlist" "ex1_1.sp "
+* "runtitle" ".title noise margin in hold operation"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ bl = 700.0000m       
++ blb = 700.0000m       
++ gl = 369.3009m       
++ gr = 369.3009m       
++ q = 369.3009m       
++ qb = 369.3009m       
++ u =   0.            
++ v1 = 522.2703m       
++ v2 = 522.2703m       
++ vdd = 700.0000m       
++ wl =   0.            
++ x = 658.1762m       
+***   END: Saved Operating Point ***                     
