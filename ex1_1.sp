@@ -33,7 +33,7 @@ CBLB blb GND 1e-12
 ******************************
 **       Voltage Source     **
 ******************************
-VDD  VDD GND 0.7V
+VVDD  VDD GND 0.7V
 VWL  wl  GND 0V		** Hold=0V, Read=0.7V
 
 .ic V(bl) = 0.7V

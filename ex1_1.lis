@@ -7,11 +7,11 @@
   this software is strictly prohibited.
   Input File: ex1_1.sp                                                          
   Command line options: /RAID2/cad/synopsys/hspice/2020.03-sp2-2/hspice/linux64/hspice -i ex1_1.sp -o ex1_1.lis
-  Start time: Tue Mar 18 23:02:12 2025
+  Start time: Tue Mar 18 23:09:55 2025
  lic:  
  lic: FLEXlm: SDK_12.6 
  lic: USER:   es25MCS042           HOSTNAME: ee28 
- lic: HOSTID: "d85ed3efc19a"       PID:      55384 
+ lic: HOSTID: "d85ed3efc19a"       PID:      59915 
  lic: Using FLEXlm license file: 
  lic: 26585@lshc 
  lic: Checkout 1 hspice 
@@ -9959,10 +9959,10 @@ y
  **** voltage sources
 
  subckt                                   
- element  0:vdd      0:vu       0:vwl     
-  volts    700.0000m    0.         0.     
-  current -998.3335n    0.       305.0210f
-  power    698.8334n    0.         0.     
+ element  0:vu       0:vvdd     0:vwl     
+  volts      0.       700.0000m    0.     
+  current    0.      -998.3335n  305.0210f
+  power      0.       698.8334n    0.     
 
      total voltage source power dissipation=  698.8334n       watts
 
@@ -10049,20 +10049,20 @@ y
 
   analysis           time    # points   tot. iter  conv.iter
   op point           0.01           1           7
-  dc sweep           0.75        9900       30873
-  readin             0.02
+  dc sweep           0.74        9900       30873
+  readin             0.01
   errchk             0.00
   setup              0.00
   output             0.00
 
 
            peak memory used        400.88 megabytes
-           total cpu time            0.82 seconds
-           total elapsed time        1.23 seconds
-           job started at     23:02:12 03/18/2025
-           job ended   at     23:02:13 03/18/2025
-           job total runtime         1.23 seconds
+           total cpu time            0.79 seconds
+           total elapsed time        0.96 seconds
+           job started at     23:09:55 03/18/2025
+           job ended   at     23:09:56 03/18/2025
+           job total runtime         0.96 seconds
 
 
  lic: Release hspice token(s) 
- lic: total license checkout elapse time:        0.40(s)
+ lic: total license checkout elapse time:        0.16(s)
